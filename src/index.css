@@ -1,19 +1,18 @@
 
 body{
-    background-color: hsla(0, 0%, 10%);
     display: flex;
     justify-content: center;
+    background-image:url("../public/bg.jpg")
 }
 
 .To-do-list{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-top: 100px;
+    max-width: 650px;
 }
-
 h1{
     font-size: 4rem;
-    color: white;
 }
 button{
     font-size: 1.7rem;
@@ -74,6 +73,8 @@ li{
 }
 .text{
     flex:1;
+    height: 40px;
+    overflow: auto;
 }
 .delete-button, .move-button{
     margin-left: 10px;

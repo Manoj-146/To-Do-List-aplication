@@ -41,14 +41,14 @@ function ToDoList(){
             setTask(updatedarr);
         }
     }
-    return(<div className="To-do-list">
+    return(<div className="To-do-list" style={{"backgroundImage":""}}>
                 <h1>To Do List</h1>
                 <div>
                     <input type="text" value={newtask} onChange={handleInputChange} placeholder="Enter a task here..."/>
                     <button className="add-button" onClick={addTask}>Add</button>
                 </div>
                 <ol>
-                    {tasks.map((task,index)=><li key={index}>
+                    {tasks.map((task,index)=><li className="list-item" key={index}>
                         <span className="text">{task}</span>
                         <button className="delete-button" onClick={()=>deleteTask(index)}>Delete</button>
                         <button className="move-button" onClick={()=>moveUpTask(index)}>&#8593;</button>
