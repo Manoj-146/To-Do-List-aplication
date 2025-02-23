@@ -41,7 +41,7 @@ function ToDoList(){
             setTask(updatedarr);
         }
     }
-    return(<div className="To-do-list" style={{"backgroundImage":""}}>
+    return(<div className="To-do-list">
                 <h1>To Do List</h1>
                 <div>
                     <input type="text" value={newtask} onChange={handleInputChange} placeholder="Enter a task here..."/>
